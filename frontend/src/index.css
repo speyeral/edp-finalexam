@@ -1,0 +1,354 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header-link {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Homepage Styles */
+.pokemon-list-container {
+  margin-top: 20px;
+}
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.pokemon-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.pokemon-card-image-container {
+  width: 96px; /* Standard sprite size */
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.pokemon-card-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.pokemon-card-name {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.custom-tag {
+  font-size: 0.8em;
+  color: #666;
+  margin-left: 5px;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Detail Page Styles */
+.detail-container {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.detail-header .pokemon-name {
+    margin: 0;
+    font-size: 2.5em;
+    text-transform: capitalize;
+}
+
+.edit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.detail-header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.disabled-link {
+    pointer-events: none;
+    opacity: 0.65;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+.detail-main-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.detail-image-container {
+    text-align: center;
+}
+
+.detail-image {
+    width: 100%;
+    max-width: 300px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    image-rendering: pixelated; /* For a crisp sprite look */
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+.audio-player {
+    margin-top: 20px;
+}
+
+.audio-player audio {
+    width: 100%;
+}
+
+.detail-info h3, .detail-sections h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.metadata-section p, .description-section p {
+    margin: 8px 0;
+}
+
+.description-section {
+    margin-top: 20px;
+}
+
+.detail-sections {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.stats-section .stat-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+
+.stat-name {
+    width: 120px;
+    font-weight: 500;
+}
+
+.stat-bar-container {
+    flex-grow: 1;
+    height: 20px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.stat-bar {
+    height: 100%;
+    background-color: #4caf50; /* A nice green */
+    transition: width 0.5s ease-in-out;
+}
+
+.stat-value {
+    font-weight: bold;
+    min-width: 30px;
+    text-align: right;
+}
+
+.abilities-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.abilities-section li {
+    background-color: #f1f1f1;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+/* Form Styles */
+.form-container {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.pokemon-form h2 {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.pokemon-form fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.pokemon-form legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Important for 100% width */
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.stat-input {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form-actions button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.form-actions button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+}
+
+.form-actions button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.form-actions button[type="button"] {
+    background-color: #6c757d;
+    color: white;
+}
+
+.form-actions button[type="button"]:hover {
+    background-color: #5a6268;
+}
+
+.form-actions button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    /* Add shared button styles to make it look consistent with the edit button */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.form-actions button:disabled,
+.delete-button:disabled {
+    background-color: #e17b85; /* Lighter red for disabled state */
+    cursor: not-allowed;
+}

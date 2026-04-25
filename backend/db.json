@@ -1,0 +1,177 @@
+{
+  "custom": [
+    {
+      "name": "vg",
+      "description": "",
+      "height": 0,
+      "weight": 0,
+      "base_experience": 0,
+      "sprite": "",
+      "abilities": [
+        {
+          "ability": {
+            "name": ""
+          }
+        }
+      ],
+      "stats": [
+        {
+          "stat": {
+            "name": "hp"
+          },
+          "base_stat": 0
+        },
+        {
+          "stat": {
+            "name": "attack"
+          },
+          "base_stat": 0
+        },
+        {
+          "stat": {
+            "name": "defense"
+          },
+          "base_stat": 0
+        },
+        {
+          "stat": {
+            "name": "special-attack"
+          },
+          "base_stat": 0
+        },
+        {
+          "stat": {
+            "name": "special-defense"
+          },
+          "base_stat": 0
+        },
+        {
+          "stat": {
+            "name": "speed"
+          },
+          "base_stat": 0
+        }
+      ],
+      "id": "143bc2a5-4009-4359-b6a0-4c13bb408753",
+      "isCustom": true
+    }
+  ],
+  "overrides": {
+    "3": {
+      "name": "venusaurch",
+      "description": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
+      "height": 20,
+      "weight": 1000,
+      "base_experience": 236,
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+      "abilities": [
+        {
+          "ability": {
+            "name": "overgrow"
+          }
+        },
+        {
+          "ability": {
+            "name": "chlorophyll"
+          }
+        }
+      ],
+      "stats": [
+        {
+          "stat": {
+            "name": "hp"
+          },
+          "base_stat": 80
+        },
+        {
+          "stat": {
+            "name": "attack"
+          },
+          "base_stat": 82
+        },
+        {
+          "stat": {
+            "name": "defense"
+          },
+          "base_stat": 83
+        },
+        {
+          "stat": {
+            "name": "special-attack"
+          },
+          "base_stat": 100
+        },
+        {
+          "stat": {
+            "name": "special-defense"
+          },
+          "base_stat": 100
+        },
+        {
+          "stat": {
+            "name": "speed"
+          },
+          "base_stat": 80
+        }
+      ]
+    },
+    "15": {
+      "name": "beedrillr",
+      "description": "It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly.",
+      "height": 10,
+      "weight": 295,
+      "base_experience": 178,
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
+      "abilities": [
+        {
+          "ability": {
+            "name": "swarm"
+          }
+        },
+        {
+          "ability": {
+            "name": "sniper"
+          }
+        }
+      ],
+      "stats": [
+        {
+          "stat": {
+            "name": "hp"
+          },
+          "base_stat": 65
+        },
+        {
+          "stat": {
+            "name": "attack"
+          },
+          "base_stat": 90
+        },
+        {
+          "stat": {
+            "name": "defense"
+          },
+          "base_stat": 40
+        },
+        {
+          "stat": {
+            "name": "special-attack"
+          },
+          "base_stat": 45
+        },
+        {
+          "stat": {
+            "name": "special-defense"
+          },
+          "base_stat": 80
+        },
+        {
+          "stat": {
+            "name": "speed"
+          },
+          "base_stat": 75
+        }
+      ]
+    }
+  }
+}
